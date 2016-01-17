@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+<script language=JavaScript>
+</script>
+<script>
+function koniec()
+{
+alert('Czy napewno chcesz opuścić grę?');
+}
+</script>
+<script src="script.js"></script>
+<title>Forest Game</title>
+</head>
+<body bgcolor="orange" text="white" onunload="koniec();">
+<center>
+<h1>Forest Game!!!</h1>
+<h4>Życia:</h4><div id="zdrowie">3</div>&nbsp;<h4>Punkty:</h4><div id="licznik">0</div>
+<canvas id="canvas">Przykro nam, ale twoja przeglądarka nie obsługuje html5, więc niestety nie będziesz mógł zagrać w grę:(
+</canvas>
+</center>
+<script>
+
+    inicjalizujGre(document.getElementById("canvas"));
+ context = canvasElement.getContext("2d");
+         
+        platki[0] = new PlatekSniegu(100, 0);
+         
+        /* uruchom glowna petle gry */
+        setInterval(glownaPetla, dlugoscKlatki);	
+</script>
+</body>
+</html>
